@@ -1,7 +1,7 @@
 # Angular Code Review Checklist
 
 ### General
-- [ ] Be smart
+- [ ] Linting spec is defined and all code passes
 - [ ] Do the right thing
 
 ### Components
@@ -9,6 +9,7 @@
 - [ ] Developer understands the difference between containers and components and each component is only responsible for one of these roles
 - [ ] All components declared using ChangeDetectionStrategy.OnPush
 - [ ] Any unused lifecycle hooks have been removed
+- [ ] Any code not directly related to presentation has been moved out of components into services
 
 ### Services
 - [ ] HTTP services are separated from services that perform business logic
